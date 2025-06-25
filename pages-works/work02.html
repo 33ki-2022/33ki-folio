@@ -15,9 +15,8 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="icon">
-                <img src="../images/33ki.jpg" alt="アイコン">
-                <h1>33ki FOLIO</h1>
+            <div id="scrolly-video">
+                <p class="hero">33ki FOLIO</p>
             </div>
             <nav>
                 <ul>
@@ -57,7 +56,8 @@
                 </p>
                 <p class="under">&emsp;</p>
                 <h3>注意・工夫した点</h3>
-                <p class="under">&emsp;初めての歌ってみた動画制作だったため、Aメロ、Bメロ、サビの抑揚のつけかたなどを注意して、他の歌ってみた動画を沢山見た点。また、自己満足で終わらないように、学校の先生に添削をお願いした点。
+                <p class="under">
+                    &emsp;初めての歌ってみた動画制作だったため、Aメロ、Bメロ、サビの抑揚のつけかたなどを注意して、他の歌ってみた動画を沢山見た点。また、自己満足で終わらないように、学校の先生に添削をお願いした点。
                 </p>
                 <h3>課題</h3>
                 <p class="under">&emsp;クライアント様とのやりとりで相違があった点。依頼を受ける手順をメモに残すことで次回以降に生かしている点。
@@ -68,5 +68,22 @@
         <footer>
             <p>© 2025 33ki</p>
         </footer>
+
+        <div class="triangle">
+            <a href="#" class="pagetop"></a>
+            <a href="#" class="pagetop-w"></a>
+        </div>
+
     </div>
+
+    <script src="../scrolly-video-3"></script>
+    <script type="text/javascript">
+        new ScrollyVideo({
+            scrollyVideoContainer: "scrolly-video",
+            src: "../videos/WebFolio.mp4"
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </body>

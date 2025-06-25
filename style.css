@@ -48,7 +48,7 @@ body {
 #scrolly-video {
     display: flex;
     position: sticky;
-    z-index: -1;
+    z-index: 0;
 }
 
 #scrolly-video p {
@@ -86,22 +86,26 @@ header h1 {
     font-size: 110%;
     letter-spacing: 0.2rem;
     font-weight: 500;
-    z-index: 5;
+    z-index: 3;
 }
 
-nav ul {
-    text-align: right;
-    padding: 1rem;
+nav {
     position: fixed;
+    top: 200px;
+    right: -80px;
     transform: rotate(-90deg);
-    top: 100px;
-    right: -100px;
 }
+
+/* nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    z-index: 1;
+} */
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
-    z-index: 4;
+    margin: 50px 10px;
 }
 
 nav ul li a {
@@ -124,7 +128,7 @@ main {
     margin-top: 0;
     display: grid;
     position: relative;
-    z-index: 0;
+    z-index: 3;
 }
 
 main h2 {
@@ -166,39 +170,54 @@ footer {
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 100%;
+}
+
+.triangle {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 10;
 }
 
 a.pagetop {
     display: block;
     width: 0;
     height: 0;
+    color: #73a0ee;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 18px solid #73a0ee;
+    border-bottom: 18px solid #4a76c3;
     /* border: solid 3px;
     border-color: #fff;
-    border-radius: 50%; */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2;
+    border-radius: 50%;*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translate(-50% -50%);
 }
 
 a.pagetop-w {
     display: block;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 18px solid #ffffff;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 20px solid #ffffff;
     /* border: solid 3px;
     border-color: #fff;
     border-radius: 50%; */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    transform: translate(-50% -50%);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
     z-index: -1;
 }
 
@@ -211,6 +230,15 @@ html {
 
     #scrolly-video p {
         font-size: 3rem;
+    }
+
+    nav {
+        top: 200px;
+        right: -100px;
+    }
+
+    nav ul li a {
+        font-size: 80%;
     }
 
     header h1 {
@@ -242,10 +270,6 @@ html {
     .icon img {
         width: 150px;
         height: auto;
-    }
-
-    nav ul li a {
-        font-size: 80%;
     }
 
     .main {
@@ -284,6 +308,15 @@ html {
     #scrolly-video p {
         font-size: 4rem;
         /* margin-top: 600px; */
+    }
+
+    nav {
+        top: 200px;
+        right: -120px;
+    }
+
+    nav ul li a {
+        font-size: 100%;
     }
 
     header h1 {

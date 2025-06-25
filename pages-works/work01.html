@@ -15,10 +15,10 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="icon">
-                <img src="../images/33ki.jpg" alt="アイコン">
-                <h1>33ki FOLIO</h1>
+            <div id="scrolly-video">
+                <p class="hero">33ki FOLIO</p>
             </div>
+
             <nav>
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
@@ -69,5 +69,22 @@
         <footer>
             <p>© 2025 33ki</p>
         </footer>
+
+        <div class="triangle">
+            <a href="#" class="pagetop"></a>
+            <a href="#" class="pagetop-w"></a>
+        </div>
+
     </div>
+
+    <script src="../scrolly-video-3"></script>
+    <script type="text/javascript">
+        new ScrollyVideo({
+            scrollyVideoContainer: "scrolly-video",
+            src: "../videos/WebFolio.mp4"
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
