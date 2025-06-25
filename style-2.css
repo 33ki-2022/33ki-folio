@@ -28,6 +28,7 @@
 
 #scrolly-video {
     display: flex;
+    z-index: 5;
 }
 
 #scrolly-video p {
@@ -41,7 +42,7 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    z-index: 1;
+    z-index: 10;
 }
 
 a {
@@ -105,28 +106,47 @@ nav ul {
     text-align: center;
     padding: 1rem;
     position: fixed;
-    top: 0;
-    right: 0;
+    transform: rotate(-90deg);
+    bottom: 100px;
+    right: -100px;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 10px;
+    z-index: 2;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 50%;
     font-weight: 500;
-    color: #ffffff;
+    color: #000000;
+}
+
+nav ul li a.invert {
+    color: #000000;
+}
+
+#logo {
+    color: #fefefe;
+    /* 元の色 */
+}
+
+#logo.invert {
+    color: #111111;
+    /* スクロール後の色 */
 }
 
 main {
     background: #fff;
     padding: 1rem;
     margin: auto;
-    margin-top: 5%;
+    padding-top: 5%;
+    padding-right: 10%;
     display: grid;
+    position: sticky;
+    z-index: -2;
 }
 
 main h2 {
@@ -198,7 +218,7 @@ section {
 }
 
 footer {
-    background: #3f6ec4;
+    background: #73a0ee;
     color: #fff;
     font-size: 0.8rem;
     text-align: center;

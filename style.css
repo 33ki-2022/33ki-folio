@@ -47,6 +47,8 @@ body {
 
 #scrolly-video {
     display: flex;
+    position: sticky;
+    z-index: -1;
 }
 
 #scrolly-video p {
@@ -59,7 +61,7 @@ body {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    z-index: 1;
+    z-index: 10;
 }
 
 .icon {
@@ -78,52 +80,51 @@ body {
 header h1 {
     background: #ffffff;
     position: relative;
-    margin: 2rem 0;
-    margin-top: 3rem;
+    padding: 2rem 0;
+    padding-top: 3rem;
+    padding-left: 40px;
     font-size: 110%;
     letter-spacing: 0.2rem;
     font-weight: 500;
-    padding-left: 40px;
+    z-index: 5;
 }
 
 nav ul {
     text-align: right;
-    padding: 2rem;
+    padding: 1rem;
     position: fixed;
-    top: 0;
-    right: 0;
+    transform: rotate(-90deg);
+    top: 100px;
+    right: -100px;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 10px;
+    z-index: 4;
 }
 
 nav ul li a {
     text-decoration: none;
     font-size: 50%;
     font-weight: 500;
+    color: #ffffff;
+}
+
+nav ul li a.invert {
     color: #000000;
-}
-
-#logo {
-    color: #fefefe;
-    /* 元の色 */
-}
-
-#logo.invert {
-    color: #111111;
-    /* スクロール後の色 */
 }
 
 main {
     background: #fff;
     padding: 1rem;
     padding-top: 0;
+    padding-bottom: 10rem;
     margin: auto;
     margin-top: 0;
     display: grid;
     position: relative;
+    z-index: 0;
 }
 
 main h2 {
@@ -161,12 +162,48 @@ section {
 }
 
 footer {
-    background: #3f6ec4;
+    background: #73a0ee;
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
     width: 100%;
+}
+
+a.pagetop {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #73a0ee;
+    /* border: solid 3px;
+    border-color: #fff;
+    border-radius: 50%; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+a.pagetop-w {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #ffffff;
+    /* border: solid 3px;
+    border-color: #fff;
+    border-radius: 50%; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*タブレット用*/
