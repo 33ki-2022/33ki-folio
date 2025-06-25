@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+.zen-kaku-gothic-new-light {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    height: 100%;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#scrolly-video {
+    display: flex;
+}
+
+#scrolly-video p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 1;
+}
+
+.icon {
+    height: 100%;
+}
+
+.icon img {
+    width: 120px;
+    height: auto;
+    margin-top: 10%;
+    padding: 30px;
+    display: block;
+    border-radius: 100%;
+}
+
+header h1 {
+    background: #ffffff;
+    position: relative;
+    margin: 2rem 0;
+    margin-top: 3rem;
+    font-size: 110%;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+nav ul {
+    text-align: right;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 50%;
+    font-weight: 500;
+    color: #000000;
+}
+
+#logo {
+    color: #fefefe;
+    /* 元の色 */
+}
+
+#logo.invert {
+    color: #111111;
+    /* スクロール後の色 */
+}
+
+main {
+    background: #fff;
+    padding: 1rem;
+    padding-top: 0;
+    margin: auto;
+    margin-top: 0;
+    display: grid;
+    position: relative;
+}
+
+main h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+main h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+main h4 {
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+main p {
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: 0.6rem 0 0;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+}
+
+.sec01 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+footer {
+    background: #3f6ec4;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/*タブレット用*/
+@media all and (min-width: 600px) {
+
+    #scrolly-video p {
+        font-size: 3rem;
+    }
+
+    header h1 {
+        font-size: 150%;
+    }
+
+    main h2 {
+        font-size: 110%;
+    }
+
+    main h3 {
+        font-size: 110%;
+    }
+
+    main h4 {
+        font-size: 80%;
+        line-height: 2rem;
+    }
+
+    main p {
+        font-size: 80%;
+        line-height: 1.3rem;
+    }
+
+    .sec11 {
+        line-height: 2rem;
+    }
+
+    .icon img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sec01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sec02 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        gap: 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        gap: 0.5rem;
+    }
+
+}
+
+/* pc用 */
+@media all and (min-width: 1025px) {
+
+    #scrolly-video p {
+        font-size: 4rem;
+        /* margin-top: 600px; */
+    }
+
+    header h1 {
+        font-size: 200%;
+    }
+
+    .icon img {
+        width: 180px;
+        height: auto;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sec01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sec02 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .sec03 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+}
