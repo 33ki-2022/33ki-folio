@@ -239,13 +239,15 @@ main section:hover {
 
 main p {
     font-size: 0.6rem;
+    color: #333;
+    font-weight: 500;
     position: relative;
     background: #fff;
     padding: 10px;
     text-align: center;
 }
 
-main p a {
+main a {
     color: #333;
     font-weight: 500;
 }
