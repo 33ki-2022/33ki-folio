@@ -121,20 +121,26 @@ nav ul li a.invert {
 
 main {
     background: #fff;
-    padding: 1rem;
+    /* padding: 1rem;
     padding-top: 0;
-    padding-bottom: 10rem;
-    margin: auto;
+    padding-bottom: 10rem; */
+    margin: 10%;
+    margin-bottom: auto;
     margin-top: 0;
-    display: grid;
-    position: relative;
-    z-index: 3;
 }
 
-main h2 {
+.works {
+    display: grid;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    gap: 30px;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+}
+
+/* main h2 {
     font-size: 1rem;
     font-weight: 500;
-}
+} */
 
 main h3 {
     font-size: 0.7rem;
@@ -147,22 +153,101 @@ main h4 {
     line-height: 1rem;
 }
 
-main p {
-    box-sizing: border-box;
-    font-size: 0.6rem;
-    font-weight: 500;
-    line-height: 1rem;
-    margin: 0.6rem 0 0;
+.filter-buttons {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main button {
+    font-size: 0.56rem;
+}
+
+.filter-btn {
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #73a0ee;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 選択中のボタンのスタイル */
+.filter-btn.active {
+    background-color: #73a0ee;
+    color: #fff;
+    border-color: #73a0ee;
+}
+
+/* 実績一覧グリッド
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+} */
+
+/* 実績アイテム */
+.work-item {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* 非表示にするためのクラス */
+.work-item.hide {
+    transform: scale(0.9);
+    opacity: 0;
+    /* display: none だとアニメーションしないため、高さを0にするテクニック */
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 section {
-    padding: 20px;
     width: 100%;
+    transition: transform .5s;
 }
 
 .sec01 {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.sec02 {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.set {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+main section:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+main p {
+    font-size: 0.6rem;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main p a {
+    color: #333;
+    font-weight: 500;
 }
 
 footer {
@@ -226,7 +311,7 @@ html {
 }
 
 /*タブレット用*/
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
 
     #scrolly-video p {
         font-size: 3rem;
@@ -263,6 +348,11 @@ html {
         line-height: 1.3rem;
     }
 
+    main button {
+        font-size: 0.8rem;
+    }
+
+
     .sec11 {
         line-height: 2rem;
     }
@@ -272,8 +362,8 @@ html {
         height: auto;
     }
 
-    .main {
-        grid-template-columns: 1fr 1fr;
+    .works {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .sec01 {
@@ -328,8 +418,16 @@ html {
         height: auto;
     }
 
-    .main {
-        grid-template-columns: 1fr 1fr 1fr;
+    .works {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    main button {
+        font-size: 0.9rem;
+    }
+
+    main p {
+        font-size: 80%;
     }
 
     .sec01 {

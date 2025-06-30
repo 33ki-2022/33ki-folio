@@ -35,26 +35,49 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="./pages/about.html">PROFILE</a></li>
-                    <li><a href="./pages/works.html">WORKS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="./pages/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
 
         </header>
 
         <main>
-            <section class="sec01">
-                <h2>Work01</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, explicabo quisquam eligendi fugiat ad
-                    fuga, vero! Esse fuga ex, asperiores quisquam consequatur, velit architecto nostrum modi, sunt autem
-                    similique rerum.</p>
-            </section>
-            <section class="sec02">
-                <h2>Work02</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, explicabo quisquam eligendi fugiat ad
-                    fuga, vero! Esse fuga ex, asperiores quisquam consequatur, velit architecto nostrum modi, sunt autem
-                    similique rerum.</p>
-            </section>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="requeat">依頼</button>
+                <button class="filter-btn" data-filter="self-made">自主制作</button>
+                <button class="filter-btn" data-filter="graphic">グラフィック</button>
+            </div>
+
+            <div class="works" id="works">
+                <section class="sec01 work-item graphic">
+                    <div class="set">
+                        <img src="images/logo1.jpg" alt="画像">
+                        <p><a href="pages-works/work01.html">バンドのロゴデザイン</a></p>
+                    </div>
+                </section>
+
+                <section class="sec02 work-item requeat">
+                    <div class="set">
+                        <img src="images/mv_main.png" alt="画像">
+                        <p><a href="pages-works/work02.html">歌ってみたMV制作</a></p>
+                    </div>
+                </section>
+
+                <section class="sec03 work-item graphic">
+                    <div class="set">
+                        <img src="images/character_main.JPG" alt="画像">
+                        <p><a href="pages-works/work03.html">キャラクターデザイン</a></p>
+                    </div>
+                </section>
+
+                <section class="sec04 work-item graphic">
+                    <div class="set">
+                        <img src="images/sticker1.JPG" alt="画像">
+                        <p><a href="pages-works/work04.html">ロゴステッカーデザイン</a></p>
+                    </div>
+            </div>
         </main>
 
         <footer>

@@ -26,7 +26,26 @@
     box-sizing: border-box;
 }
 
-#scrolly-video {
+.WebFolioBg {
+    background-image: url(images/WebFolioBg.jpg);
+    background-size: cover;
+    min-height: 120px;
+    width: auto;
+    display: flex;
+    justify-items: center;
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    margin-left: 50px;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* #scrolly-video {
     display: flex;
     z-index: 5;
 }
@@ -43,7 +62,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     z-index: 10;
-}
+} */
 
 a {
     font-size: 1rem;
@@ -78,26 +97,6 @@ header {
     position: relative;
 }
 
-.icon {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.icon img {
-    width: 120px;
-    height: auto;
-    padding: 30px;
-    display: block;
-    border-radius: 100%;
-}
-
-h1 {
-    letter-spacing: 0.2rem;
-    font-size: 110%;
-    font-weight: 500;
-}
-
 nav a:hover {
     text-decoration: none;
 }
@@ -118,33 +117,26 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    list-style: circle;
     font-size: 50%;
     font-weight: 500;
-    color: #000000;
-}
-
-nav ul li a.invert {
-    color: #000000;
-}
-
-#logo {
-    color: #fefefe;
-    /* 元の色 */
-}
-
-#logo.invert {
-    color: #111111;
-    /* スクロール後の色 */
 }
 
 main {
     background: #fff;
     padding: 1rem;
     margin: auto;
+    margin-top: 5%;
+    margin-left: 10%;
     padding-top: 5%;
     padding-right: 10%;
     display: grid;
+}
+
+main ul li {
+    list-style: circle;
+    font-weight: 500;
+    color: #000000;
 }
 
 main h2 {
@@ -169,6 +161,10 @@ main p {
     font-weight: 500;
     line-height: 1.2rem;
     margin: 0.6rem 0 0;
+}
+
+.big {
+    font-size: 1rem;
 }
 
 .under {
@@ -276,7 +272,7 @@ html {
 }
 
 /*タブレット用*/
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
     #scrolly-video p {
         font-size: 150%;
     }

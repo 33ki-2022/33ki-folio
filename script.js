@@ -1,3 +1,31 @@
+// DOMが読み込まれたら実行
+window.addEventListener('DOMContentLoaded', () => {
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const workItems = document.querySelectorAll('.work-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // data-filterの値を取得
+            const filter = button.getAttribute('data-filter');
+
+            // activeクラスの切り替え
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // アイテムの表示・非表示を切り替え
+            workItems.forEach(item => {
+                // "すべて"が選択された場合、またはアイテムがフィルタのクラスを持っている場合
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.classList.remove('hide');
+                } else {
+                    item.classList.add('hide');
+                }
+            });
+        });
+    });
+});
+
 // script.js
 
 // jQuery(function () {
