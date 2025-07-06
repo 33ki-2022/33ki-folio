@@ -80,6 +80,10 @@ img {
     vertical-align: bottom;
 }
 
+.img-small {
+    padding: 0 30%;
+}
+
 body {
     font-family: "Zen Kaku Gothic New", sans-serif;
     line-height: 1.6;
@@ -189,13 +193,20 @@ section {
 .images {
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-column-start: 1;
     grid-column-end: 2;
     gap: 0.5rem;
 }
 
+.youtube-main {
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
 .container {
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-start: 2;
@@ -209,6 +220,12 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
+    gap: 0.5rem;
+}
+
+.trump {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
 }
 
@@ -300,10 +317,10 @@ html {
         line-height: 2rem;
     }
 
-    .icon img {
+    /* .icon img {
         width: 150px;
         height: auto;
-    }
+    } */
 
     nav ul li a {
         font-size: 80%;
@@ -323,19 +340,18 @@ html {
         grid-column-end: 3;
     }
 
-    .images {
+    /* .images {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-start: 1;
         grid-column-end: 2;
         gap: 0.5rem;
-    }
+    } */
 
-    .container {
+    /* .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-start: 2;
         grid-column-end: 5;
-        gap: 0.5rem;
-    }
+    } */
 
     .fourimages {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -353,12 +369,12 @@ html {
         font-size: 200%;
     }
 
-    .icon img {
+    /* .icon img {
         width: 180px;
         height: auto;
-    }
+    } */
 
-    .main {
+    /* .main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -375,6 +391,6 @@ html {
     .sec03 {
         grid-column-start: 3;
         grid-column-end: 4;
-    }
+    } */
 
 }
