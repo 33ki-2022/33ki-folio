@@ -131,8 +131,8 @@ main {
     height: auto;
     padding: 1rem;
     margin: auto;
+    margin-top: 0;
     margin-left: 10%;
-    margin-bottom: 20vh;
     padding-top: 10%;
     padding-right: 10%;
     display: grid;
@@ -150,12 +150,12 @@ main h2 {
 }
 
 main h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 main h4 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 1rem;
     margin-top: 0.5rem;
@@ -173,7 +173,12 @@ main p {
 }
 
 .under {
+    /* font-size: 80%; */
     margin: 0.5rem 0 1rem;
+}
+
+.under p {
+    font-size: 80%;
 }
 
 section {
@@ -230,12 +235,20 @@ section {
 }
 
 footer {
-    background: #73a0ee;
+    margin-top: 20%;
+    background-image: url(images/WebFolioBg.jpg);
+    transform: rotate(180deg);
+    background-size: cover;
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
     padding: 1.5rem;
     width: 100%;
+}
+
+footer p {
+    transform: rotate(-180deg);
+    font-weight: 500;
 }
 
 .triangle {
@@ -300,7 +313,7 @@ html {
     }
 
     main h3 {
-        font-size: 110%;
+        font-size: 150%;
     }
 
     main h4 {
