@@ -80,10 +80,6 @@ img {
     vertical-align: bottom;
 }
 
-.img-small {
-    padding: 0 30%;
-}
-
 body {
     font-family: "Zen Kaku Gothic New", sans-serif;
     line-height: 1.6;
@@ -127,14 +123,15 @@ nav ul li a {
 }
 
 main {
+    max-width: 1025px;
     background: #fff;
     height: auto;
-    padding: 1rem;
-    margin: auto;
-    margin-top: 0;
-    margin-left: 10%;
+    padding: 2.5rem;
+    margin: 0 auto;
+    /* margin-top: 0;
+    margin-left: 10%; */
     padding-top: 10%;
-    padding-right: 10%;
+    /* padding-right: 10%; */
     display: grid;
 }
 
@@ -196,16 +193,35 @@ section {
 }
 
 .images {
+    padding: 2%;
     margin: 1rem 0;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-start: 1;
     grid-column-end: 2;
-    gap: 0.5rem;
+    gap: 1.0rem;
 }
 
+.youtube {
+    padding: 2%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 3fr 2.85fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    gap: 1.0rem;
+}
+
+/* empwrsのメモの方のやつ */
+.img-small {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 2% 30% 0 30%;
+}
+
+/* eartagのロゴにも適応されてる */
 .youtube-main {
-    height: 100%;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -216,22 +232,39 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-column-start: 2;
     grid-column-end: 3;
-    gap: 0.5rem;
+    gap: 1.0rem;
 }
 
 .fourimages {
-    margin: 1rem 0;
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.trump-main {
+    margin: 5% 0;
+    width: 100%;
+    height: 15%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 
 .trump {
+    padding: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
+}
+
+.unifuri {
+    padding: 5%;
+}
+
+.cardsticker {
+    align-items: center;
 }
 
 footer {
@@ -304,9 +337,9 @@ html {
 
 /*タブレット用*/
 @media all and (min-width: 800px) {
-    #scrolly-video p {
+    /* #scrolly-video p {
         font-size: 150%;
-    }
+    } */
 
     main h2 {
         font-size: 110%;
@@ -373,13 +406,34 @@ html {
     .triangle {
         right: 15px;
     }
-
 }
 
 /* pc用 */
 @media all and (min-width: 1025px) {
-    #scrolly-video p {
+    /* #scrolly-video p {
         font-size: 200%;
+    } */
+
+    main h2 {
+        font-size: 120%;
+    }
+
+    main h3 {
+        font-size: 180%;
+    }
+
+    main h4 {
+        font-size: 100%;
+        line-height: 2rem;
+    }
+
+    main p {
+        font-size: 100%;
+        line-height: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 100%;
     }
 
     /* .icon img {

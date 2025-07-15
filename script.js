@@ -17,9 +17,11 @@ window.addEventListener('DOMContentLoaded', () => {
             workItems.forEach(item => {
                 // "すべて"が選択された場合、またはアイテムがフィルタのクラスを持っている場合
                 if (filter === 'all' || item.classList.contains(filter)) {
+                    item.classList.add('show');
                     item.classList.remove('hide');
                 } else {
                     item.classList.add('hide');
+                    item.classList.remove('show');
                 }
             });
         });
