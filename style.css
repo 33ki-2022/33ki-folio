@@ -66,6 +66,10 @@ body {
     z-index: 10;
 }
 
+header {
+    position: relative; /* この一行を追加することが最重要です */
+}
+
 header img {
     height: 55vh;
     width: 100%;
@@ -298,18 +302,6 @@ footer {
 footer p {
     transform: rotate(-180deg);
     font-weight: 500;
-}
-
-.topclass {
-    scale: 6%;
-    position: fixed;
-    bottom: -360px;
-    right: -320px;
-    z-index: 5;
-}
-
-.top {
-    scale: 6%;
 }
 
 .triangle {
