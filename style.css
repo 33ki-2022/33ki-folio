@@ -67,11 +67,12 @@ body {
 }
 
 header {
-    position: relative; /* この一行を追加することが最重要です */
+    position: relative;
+    /* この一行を追加することが最重要です */
 }
 
 header img {
-    height: 55vh;
+    height: 60vh;
     width: 100%;
     object-fit: cover;
 }
@@ -81,7 +82,7 @@ header img {
     font-weight: 500;
     font-size: 2rem;
     position: absolute;
-    top: 27%;
+    top: 40%;
     left: 10%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -360,6 +361,10 @@ html {
 
     #scrolly-video p {
         font-size: 3rem;
+    }
+
+    header img {
+        height: 70vh;
     }
 
     nav {
