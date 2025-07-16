@@ -123,7 +123,7 @@ nav ul li a {
 }
 
 main {
-    max-width: 1025px;
+    max-width: 2000px;
     background: #fff;
     height: auto;
     padding: 2.5rem;
@@ -208,6 +208,7 @@ section {
 }
 
 .sec11 {
+
     line-height: 30px;
 }
 
@@ -390,6 +391,7 @@ html {
 
     .sec11 {
         line-height: 2rem;
+        padding-left: 0;
     }
 
     .sec01 {
