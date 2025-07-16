@@ -141,6 +141,25 @@ main ul li {
     color: #000000;
 }
 
+.weblink {
+    margin: 1.2rem 0 2rem 0;
+    text-align: center;
+}
+
+.weblink a {
+    background-color: #f3f3f3;
+    padding: 10px 20%;
+    border-radius: 30px;
+    color: #d78c00;
+    font-size: 70%;
+}
+
+.weblink a:hover {
+    background-color: #d78c00;
+    color: #ffffff;
+    transition: .3s;
+}
+
 main h2 {
     font-size: 1rem;
     font-weight: 500;
@@ -347,6 +366,10 @@ html {
         font-size: 150%;
     } */
 
+    .weblink a {
+        font-size: 80%;
+    }
+
     main h2 {
         font-size: 110%;
     }
@@ -428,6 +451,10 @@ html {
     /* #scrolly-video p {
         font-size: 200%;
     } */
+
+    .weblink a {
+        font-size: 100%;
+    }
 
     main h2 {
         font-size: 120%;
