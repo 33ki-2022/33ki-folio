@@ -112,7 +112,7 @@ header h1 {
 nav {
     position: absolute;
     top: 200px;
-    right: -80px;
+    right: -100px;
     transform: rotate(-90deg);
     z-index: 1;
 }
@@ -311,57 +311,52 @@ footer p {
     scale: 6%;
 }
 
-/* .triangle {
+.triangle {
     width: 60px;
     height: 60px;
     position: fixed;
     bottom: 0px;
-    right: 30px;
+    right: 10px;
     z-index: 10;
-} */
+}
 
-
-/* a.pagetop {
+a.pagetop {
     display: block;
     width: 0;
     height: 0;
     color: #73a0ee;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 18px solid #047cb7;
-    background-image: linear-gradient(0deg, #33beae, #3988db); 
-    border: solid 3px;
+    border-bottom: 18px solid #4a76c3;
+    /* border: solid 3px;
     border-color: #fff;
-    border-radius: 50%;
+    border-radius: 50%;*/
     position: absolute;
     top: 10px;
     left: 10px;
     transform: translate(-50% -50%);
-} */
+}
 
-/* a.pagetop-w {
+a.pagetop-w {
     display: block;
     width: 0;
     height: 0;
     font-size: 1.5rem;
-    scale: 150%;
     color: #ffffff;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     border-bottom: 20px solid #ffffff;
-    border: solid 3px;
+    /* border: solid 3px;
     border-color: #fff;
-    border-radius: 50%;
-position: absolute;
-top: 9px;
-left: 9px;
-transform: translate(-50% -50%);
--ms-filter: blur(5px);
-filter: blur(5px);
-z-index: -1;
+    border-radius: 50%; */
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    transform: translate(-50% -50%);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
 }
-
-*/
 
 html {
     scroll-behavior: smooth;
@@ -447,6 +442,9 @@ html {
         gap: 0.5rem;
     }
 
+    .triangle {
+        right: 15px;
+    }
 }
 
 /* pc用 */
@@ -502,4 +500,7 @@ html {
         grid-column-end: 4;
     }
 
+    .triangle {
+        right: 20px;
+    }
 }

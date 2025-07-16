@@ -106,8 +106,8 @@ nav ul {
     padding: 1rem;
     position: fixed;
     transform: rotate(-90deg);
-    bottom: 200px;
-    right: -100px;
+    bottom: 180px;
+    right: -95px;
 }
 
 nav ul li {
@@ -193,6 +193,7 @@ section {
 }
 
 .images {
+    align-items: center;
     padding: 2%;
     margin: 1rem 0;
     display: grid;
@@ -235,6 +236,10 @@ section {
     gap: 1.0rem;
 }
 
+.container.logo {
+    padding: 2.5%;
+}
+
 .fourimages {
     margin: 2rem;
     display: grid;
@@ -268,7 +273,7 @@ section {
 }
 
 footer {
-    margin-top: 20%;
+    margin-top: 50%;
     background-image: url(images/WebFolioBg.jpg);
     transform: rotate(180deg);
     background-size: cover;
@@ -289,7 +294,7 @@ footer p {
     height: 60px;
     position: fixed;
     bottom: 0px;
-    right: -13px;
+    right: -10px;
     z-index: 10;
 }
 
@@ -337,6 +342,7 @@ html {
 
 /*タブレット用*/
 @media all and (min-width: 800px) {
+
     /* #scrolly-video p {
         font-size: 150%;
     } */
@@ -363,10 +369,19 @@ html {
         line-height: 2rem;
     }
 
+    .sec01 {
+        padding-right: 50px;
+    }
+
     /* .icon img {
         width: 150px;
         height: auto;
     } */
+
+    nav ul {
+        bottom: 200px;
+        right: -97px;
+    }
 
     nav ul li a {
         font-size: 80%;
@@ -432,6 +447,10 @@ html {
         line-height: 2rem;
     }
 
+    nav ul {
+        bottom: 220px;
+    }
+
     nav ul li a {
         font-size: 100%;
     }
@@ -460,4 +479,11 @@ html {
         grid-column-end: 4;
     } */
 
+    .sec01 {
+        padding-right: 50px;
+    }
+
+    .triangle {
+        right: 39px;
+    }
 }
