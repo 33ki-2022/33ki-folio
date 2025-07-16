@@ -223,6 +223,10 @@ section {
     gap: 1.0rem;
 }
 
+.switch {
+    scale: 70%;
+}
+
 .youtube {
     padding: 2%;
     margin: 1rem 0;
