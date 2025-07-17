@@ -128,7 +128,6 @@ main {
     height: auto;
     padding: 2.5rem;
     margin: 0 auto;
-    margin-left: 10%;
     /* margin-top: 0;
     margin-left: 10%; */
     padding-top: 10%;
@@ -370,6 +369,10 @@ html {
 
     .weblink a {
         font-size: 80%;
+    }
+
+    main {
+        margin-left: 10%;
     }
 
     main h2 {
